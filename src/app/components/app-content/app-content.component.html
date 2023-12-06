@@ -1,0 +1,9 @@
+<div
+  class="content-container border"
+  [ngClass]="{ 'red-background': hasTenClicks }"
+>
+  <div class="border">
+    <app-counter-btn (clicks)="onButtonClicks($event)"></app-counter-btn>
+    <app-counter-btn (clicks)="onButtonClicks($event)"></app-counter-btn>
+  </div>
+</div>
